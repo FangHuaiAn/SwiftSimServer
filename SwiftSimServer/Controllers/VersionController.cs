@@ -11,7 +11,7 @@ namespace SwiftSimServer.Controllers
     [Route("api/[controller]")]
     public class VersionController : Controller
     {
-        [HttpGet("{device}/{version}")]
+        [HttpGet("{version}")]
         public string Get(string device, string version)
         {
             // 應該紀錄使用者的裝置型號及應用程式版本
