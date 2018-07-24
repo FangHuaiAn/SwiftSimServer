@@ -11,6 +11,12 @@ namespace SwiftSimServer.Controllers
     [Route("api/[controller]")]
     public class ServiceCategoryController : Controller
     {
+        // https://localhost:5001/api/servicecategory/version
+        [HttpGet]
+        [Route("serviceversion")]
+        public int GetVersion(){
+            return 1;
+        }
 
         // https://localhost:5001/api/servicecategory
         [HttpGet]
@@ -37,9 +43,44 @@ namespace SwiftSimServer.Controllers
 
             results.Add(new ServiceCategory
             {
-                Name = "",
+                Name = "咖啡",
                 ImagePath = "https://swift.azurewebsites.net/Images/cafe.jpg",
                 Index = 0
+            });
+
+            results.Add(new ServiceCategory
+            {
+                Name = "甜點",
+                ImagePath = "https://swift.azurewebsites.net/Images/cupcake.jpg",
+                Index = 1
+            });
+
+            results.Add(new ServiceCategory
+            {
+                Name = "下午茶",
+                ImagePath = "https://swift.azurewebsites.net/Images/nestcake.jpg",
+                Index = 2
+            });
+
+            results.Add(new ServiceCategory
+            {
+                Name = "義大利麵",
+                ImagePath = "https://swift.azurewebsites.net/Images/noodle.jpg",
+                Index = 3
+            });
+
+            results.Add(new ServiceCategory
+            {
+                Name = "港式叉燒",
+                ImagePath = "https://swift.azurewebsites.net/Images/porkroast.jpg",
+                Index = 4
+            });
+
+            results.Add(new ServiceCategory
+            {
+                Name = "美式餐廳",
+                ImagePath = "https://swift.azurewebsites.net/Images/porkribs.jpg",
+                Index = 5
             });
 
 
