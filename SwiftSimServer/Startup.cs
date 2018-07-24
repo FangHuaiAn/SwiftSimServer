@@ -44,13 +44,13 @@ namespace SwiftSimServer
                 app.UseHsts();
             }
 
-            app.UseStaticFiles();
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(
-                Path.Combine(Directory.GetCurrentDirectory(), "Images")),
-                RequestPath = "/Images"
-            });
+            //app.UseStaticFiles();
+            //app.UseStaticFiles(new StaticFileOptions
+            //{
+            //    FileProvider = new PhysicalFileProvider(
+            //    Path.Combine(Directory.GetCurrentDirectory(), "Images")),
+            //    RequestPath = "/Images"
+            //});
 
             app.UseHttpsRedirection();
             app.UseMvc();
