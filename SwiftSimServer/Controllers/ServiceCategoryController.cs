@@ -13,7 +13,7 @@ namespace SwiftSimServer.Controllers
     {
         // https://localhost:5001/api/servicecategory/version
         [HttpGet]
-        [Route("serviceversion")]
+        [Route("version")]
         public int GetVersion(){
             return 1;
         }

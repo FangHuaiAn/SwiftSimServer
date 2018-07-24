@@ -12,9 +12,9 @@ namespace SwiftSimServer.Controllers
     public class VersionController : Controller
     {
         [HttpGet("{version}")]
-        public string Get(string device, string version)
+        public string Get(string version)
         {
-            // 應該紀錄使用者的裝置型號及應用程式版本
+            // 紀錄使用者的應用程式版本
             // 回傳最新版本
 
             return "1.0.0.234";
