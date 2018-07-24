@@ -39,47 +39,51 @@ namespace SwiftSimServer.Controllers
         }
 
         private List<ServiceCategory> ReadFromDatabase(){
+
+            var keyString = "?sv=2017-11-09&ss=f&srt=o&sp=r&se=2018-07-25T04:37:56Z&st=2018-07-24T20:37:56Z&spr=https&sig=RnwYdgPx7HdsFk6DcCZAJiqcJ1u0XCJPx29%2BpbYWiGM%3D";
+
             var results = new List<ServiceCategory>();
 
             results.Add(new ServiceCategory
             {
+                
                 Name = "咖啡",
-                ImagePath = "https://swift.azurewebsites.net/Images/cafe.jpg",
+                ImagePath = "https://scoresrv.file.core.windows.net/images/cafe.jpg" + keyString,
                 Index = 0
             });
 
             results.Add(new ServiceCategory
             {
                 Name = "甜點",
-                ImagePath = "https://swift.azurewebsites.net/Images/cupcake.jpg",
+                ImagePath = "https://scoresrv.file.core.windows.net/images/cupcake.jpg" + keyString,
                 Index = 1
             });
 
             results.Add(new ServiceCategory
             {
                 Name = "下午茶",
-                ImagePath = "https://swift.azurewebsites.net/Images/nestcake.jpg",
+                ImagePath = "https://scoresrv.file.core.windows.net/images/nestcake.jpg" + keyString,
                 Index = 2
             });
 
             results.Add(new ServiceCategory
             {
                 Name = "義大利麵",
-                ImagePath = "https://swift.azurewebsites.net/Images/noodle.jpg",
+                ImagePath = "https://scoresrv.file.core.windows.net/images/noodle.jpg" + keyString,
                 Index = 3
             });
 
             results.Add(new ServiceCategory
             {
                 Name = "港式叉燒",
-                ImagePath = "https://swift.azurewebsites.net/Images/porkroast.jpg",
+                ImagePath = "https://scoresrv.file.core.windows.net/images/porkroast.jpg" + keyString,
                 Index = 4
             });
 
             results.Add(new ServiceCategory
             {
                 Name = "美式餐廳",
-                ImagePath = "https://swift.azurewebsites.net/Images/porkribs.jpg",
+                ImagePath = "https://scoresrv.file.core.windows.net/images/porkribs.jpg" + keyString,
                 Index = 5
             });
 

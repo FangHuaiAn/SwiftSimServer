@@ -45,12 +45,6 @@ namespace SwiftSimServer
             }
 
             app.UseStaticFiles();
-            //app.UseStaticFiles(new StaticFileOptions
-            //{
-            //    FileProvider = new PhysicalFileProvider(
-            //    Path.Combine(Directory.GetCurrentDirectory(), "Images")),
-            //    RequestPath = "/Images"
-            //});
 
             app.UseHttpsRedirection();
             app.UseMvc();
