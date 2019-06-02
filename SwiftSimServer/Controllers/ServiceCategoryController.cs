@@ -40,7 +40,7 @@ namespace SwiftSimServer.Controllers
 
         private List<ServiceCategory> ReadFromDatabase(){
 
-            var keyString = "?sv=2018-03-28&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-05-31T08:10:58Z&st=2019-05-01T00:10:58Z&spr=https&sig=z22ZxFx%2FYFX7Jg7FFEkusCKCUSxhqvvFK1rm63cGCCk%3D";
+            var keyString = "?sv=2018-03-28&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-06-30T00:31:10Z&st=2019-06-01T16:31:10Z&spr=https&sig=kTzUfkakEiFXpcC6wGE%2BK1VTFYToPqDkSqnw%2BrNn2bg%3D";
             var results = new List<ServiceCategory>();
 
             results.Add(new ServiceCategory
